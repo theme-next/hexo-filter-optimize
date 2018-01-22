@@ -20,6 +20,31 @@ Activate the plugin in hexo's `_config.yml` like this:
 ```yml
 filter_optimize:
   enable: true
-  css_delivery: true
-  ...
+  # remove static resource query string
+  #   - like `?v=1.0.0`
+  remove_query_string: true
+  css:
+    enable: true
+    # use a script block to load css elements dynamically
+    delivery: true
+    # make specific css content inline into the html page
+    #   - only support the full path
+    #   - default is ['css/main.css']
+    inline:
+    exclude:
+  js:
+    # bundle loaded js file into the one
+    bundle: true
+    exclude:
 ```
+
+## Comparison
+
+Here is a [result](https://gtmetrix.com/compare/Z7BnLaPX/qSMKtzBY) from [GTmetrix](https://gtmetrix.com) to show you the changes between before and after. (Same web server located in Tokyo, Japan, vultr.com)
+
+* **Remove query strings from static resources** - let all the proxies could cache resources well. (https://gtmetrix.com/remove-query-strings-from-static-resources.html)
+* **Make fewer HTTP requests** - through combined the loaded js files into the one.
+* **Prefer asynchronous resources** - change the css delivery method using a script block instead of link tag.
+* And TODOs ...
+
+![Comparison](https://user-images.githubusercontent.com/980449/35233293-a8229c72-ffd8-11e7-8a23-3b8bc10d40c3.png)

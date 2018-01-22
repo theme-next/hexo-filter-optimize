@@ -1,10 +1,14 @@
 'use strict';
 
-if (hexo.config.filter_optimize && hexo.config.filter_optimize.enable) {
+var filterOptimize = hexo.config.filter_optimize;
+if (filterOptimize && filterOptimize.enable) {
   var filter = require('./lib/filter');
 
-  // enable optimize the css delivery
-  if (hexo.config.filter_optimize.css_delivery) {
+  filterOptimize.css = filterOptimize.css || {};
+  filterOptimize.js = filterOptimize.js || {};
+
+  // enable one of the optimizations
+  if (filterOptimize.css.enable || filterOptimize.js.bundle) {
     hexo.extend.filter.register('after_generate', filter);
   }
 }
