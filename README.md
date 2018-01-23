@@ -25,6 +25,8 @@ filter_optimize:
   remove_query_string: true
   css:
     enable: true
+    # bundle loaded css file into the one
+    bundle: true
     # use a script block to load css elements dynamically
     delivery: true
     # make specific css content inline into the html page
