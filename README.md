@@ -30,12 +30,12 @@ filter_optimize:
     # make specific css content inline into the html page
     #   - only support the full path
     #   - default is ['css/main.css']
-    inline:
-    exclude:
+    inlines:
+    excludes:
   js:
     # bundle loaded js file into the one
     bundle: true
-    exclude:
+    excludes:
 ```
 
 ## Comparison
