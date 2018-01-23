@@ -1,6 +1,6 @@
 {
   "name": "hexo-filter-optimize",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A hexo plugin that optimize the pages loading speed.",
   "main": "index.js",
   "scripts": {
@@ -25,8 +25,7 @@
   "dependencies": {
     "bluebird": "^3.5.1",
     "jsdom": "^11.6.0",
-    "minimatch": "^3.0.4",
-    "stream-to-array": "^2.3.0"
+    "minimatch": "^3.0.4"
   },
   "devDependencies": {
     "eslint": "^4.16.0",
