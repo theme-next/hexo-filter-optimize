@@ -1,4 +1,10 @@
 # hexo-filter-optimize
+[![npm-build]][npm-build-link] [![travis-ci]][travis-ci-link]
+
+[npm-build]: https://img.shields.io/npm/v/hexo-filter-optimize.svg?style=flat
+[npm-build-link]: https://www.npmjs.com/package/hexo-filter-optimize
+[travis-ci]: https://img.shields.io/travis/theme-next/hexo-filter-optimize/master.svg?style=flat
+[travis-ci-link]: https://travis-ci.org/theme-next/hexo-filter-optimize
 
 A hexo plugin that optimize the pages loading speed.
 
