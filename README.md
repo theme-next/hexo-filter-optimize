@@ -46,6 +46,9 @@ filter_optimize:
     # bundle loaded js file into the one
     bundle: true
     excludes:
+  # set the priority of this plugin,
+  # lower means it will be executed first, default is 10
+  priority: 12
 ```
 
 ## Comparison

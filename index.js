@@ -7,8 +7,13 @@ if (filterOptimize && filterOptimize.enable) {
   filterOptimize.css = filterOptimize.css || {};
   filterOptimize.js = filterOptimize.js || {};
 
+  var priority = parseInt(filterOptimize.priority);
+  if (isNaN(priority)) {
+    priority = 10;
+  }
+
   // enable one of the optimizations
   if (filterOptimize.css.enable || filterOptimize.js.bundle) {
-    hexo.extend.filter.register('after_generate', filter);
+    hexo.extend.filter.register('after_generate', filter, priority);
   }
 }
