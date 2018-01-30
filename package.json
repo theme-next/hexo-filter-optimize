@@ -24,7 +24,7 @@
   "homepage": "https://github.com/theme-next/hexo-filter-optimize#readme",
   "dependencies": {
     "bluebird": "^3.5.1",
-    "jsdom": "^11.6.0",
+    "jsdom": "^11.6.1",
     "minimatch": "^3.0.4"
   },
   "devDependencies": {
