@@ -51,6 +51,11 @@ filter_optimize:
   priority: 12
 ```
 
+This plugin can be disabled by `NODE_ENV` in development:
+```
+export NODE_ENV=development
+```
+
 ## Comparison
 
 Here is a [result](https://gtmetrix.com/compare/Z7BnLaPX/qSMKtzBY) from [GTmetrix](https://gtmetrix.com) to show you the changes between before and after. (Same web server located in Tokyo, Japan, vultr.com)
