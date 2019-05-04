@@ -51,7 +51,7 @@ filter_optimize:
   priority: 12
 ```
 
-This plugin can be disabled by `NODE_ENV` in development:
+This plugin can be disabled by `NODE_ENV` in development to boost `hexo generate`:
 ```
 export NODE_ENV=development
 ```
