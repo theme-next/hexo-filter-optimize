@@ -1,7 +1,8 @@
 'use strict';
 
+var env = process.env.NODE_ENV;
 var filterOptimize = hexo.config.filter_optimize;
-if (filterOptimize && filterOptimize.enable) {
+if (env !== 'development' && filterOptimize && filterOptimize.enable) {
   var filter = require('./lib/filter');
 
   filterOptimize.css = filterOptimize.css || {};
