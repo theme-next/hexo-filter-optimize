@@ -1,3 +1,5 @@
+/* global hexo */
+
 'use strict';
 
 var env = process.env.NODE_ENV;
@@ -8,7 +10,7 @@ if (env !== 'development' && filterOptimize && filterOptimize.enable) {
   filterOptimize.css = filterOptimize.css || {};
   filterOptimize.js = filterOptimize.js || {};
 
-  var priority = parseInt(filterOptimize.priority);
+  var priority = parseInt(filterOptimize.priority, 10);
   if (isNaN(priority)) {
     priority = 10;
   }
