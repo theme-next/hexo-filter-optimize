@@ -19,7 +19,7 @@ It will improve your pages loading and get a higher score in the [Google PageSpe
 [![dt-image]][npm-url]
 
 ```bash
-npm install hexo-filter-optimize --save
+npm install hexo-filter-optimize
 ```
 
 ## Usage
