@@ -4,16 +4,16 @@
 
 var env = process.env.NODE_ENV;
 var filterOptimize = hexo.config.filter_optimize = Object.assign({
-  enable: true,
+  enable         : true,
   remove_comments: false,
-  css: {
-    bundle: true,
+  css            : {
+    bundle  : true,
     delivery: true,
-    inlines: ['css/main.css'],
+    inlines : ['css/main.css'],
     excludes: []
   },
   js: {
-    bundle: true,
+    bundle  : true,
     excludes: []
   }
 }, hexo.config.filter_optimize);

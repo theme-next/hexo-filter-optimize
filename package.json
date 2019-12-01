@@ -4,7 +4,7 @@
   "description": "A hexo plugin that optimize the pages loading speed.",
   "main": "index.js",
   "scripts": {
-    "test": "eslint index.js"
+    "test": "eslint ."
   },
   "repository": {
     "type": "git",
