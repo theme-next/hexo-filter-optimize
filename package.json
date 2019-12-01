@@ -23,12 +23,12 @@
   },
   "homepage": "https://github.com/theme-next/hexo-filter-optimize#readme",
   "dependencies": {
-    "bluebird": "^3.7.0",
-    "jsdom": "^15.1.1",
+    "bluebird": "^3.7.2",
+    "jsdom": "^15.2.1",
     "minimatch": "^3.0.4"
   },
   "devDependencies": {
-    "eslint": "^6.5.1",
+    "eslint": "^6.7.2",
     "eslint-config-theme-next": "^1.1.3"
   }
 }
