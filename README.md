@@ -28,9 +28,6 @@ Activate the plugin in hexo's `_config.yml` like this:
 ```yml
 filter_optimize:
   enable: true
-  # remove static resource query string
-  #   - like `?v=1.0.0`
-  remove_query_string: true
   # remove the surrounding comments in each of the bundled files
   remove_comments: false
   css:
