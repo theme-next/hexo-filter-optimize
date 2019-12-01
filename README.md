@@ -31,7 +31,6 @@ filter_optimize:
   # remove the surrounding comments in each of the bundled files
   remove_comments: false
   css:
-    enable: true
     # bundle loaded css file into the one
     bundle: true
     # use a script block to load css elements dynamically
