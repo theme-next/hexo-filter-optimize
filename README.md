@@ -12,6 +12,8 @@ And inline the `main.css` into the html page like @maple3142 [does](https://gith
 
 It will improve your pages loading and get a higher score in the [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/).
 
+**Known Issues:** This plugin may cause Font Awesome and PJAX to fail to load.
+
 ## Installation
 
 ![size-image]
