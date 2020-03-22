@@ -23,11 +23,11 @@ var config = hexo.config.filter_optimize = Object.assign({
 }, hexo.config.filter_optimize);
 
 if (process.env.NODE_ENV !== 'development' && config.enable) {
-  const { filter, css, js } = require('./lib/index');
+  const { filter, css, js, image } = require('./lib/index');
   const priority = parseInt(config.priority, 10) || 10;
 
   // enable one of the optimizations
-  if (config.css.bundle || config.js.bundle || config.image.minify) {
+  if (config.css.bundle || config.js.bundle) {
     hexo.extend.filter.register('after_generate', filter, priority);
   }
   if (config.css.minify) {
@@ -35,5 +35,8 @@ if (process.env.NODE_ENV !== 'development' && config.enable) {
   }
   if (config.js.minify) {
     hexo.extend.filter.register('after_render:js', js);
+  }
+  if (config.image.minify) {
+    hexo.extend.filter.register('after_generate', image);
   }
 }
