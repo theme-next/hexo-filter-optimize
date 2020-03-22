@@ -34,7 +34,7 @@ filter_optimize:
   remove_comments: false
   css:
     # minify all css files
-    minify: false
+    minify: true
     # bundle loaded css files into one
     bundle: true
     # use a script block to load css elements dynamically
@@ -46,13 +46,18 @@ filter_optimize:
     excludes:
   js:
     # minify all js files
-    minify: false
+    minify: true
     # bundle loaded js files into one
     bundle: true
     excludes:
   image:
     # minify all images
-    minify: false
+    minify: true
+    interlaced: false
+    multipass: false
+    optimizationLevel: 2
+    pngquant: false
+    progressive: false
   # set the priority of this plugin,
   # lower means it will be executed first, default of Hexo is 10
   priority: 12

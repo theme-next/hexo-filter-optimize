@@ -18,7 +18,12 @@ var config = hexo.config.filter_optimize = Object.assign({
     excludes: []
   },
   image: {
-    minify: true
+    minify: true,
+    interlaced: false,
+    multipass: false,
+    optimizationLevel: 2,
+    pngquant: false,
+    progressive: false
   }
 }, hexo.config.filter_optimize);
 
