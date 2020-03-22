@@ -8,7 +8,7 @@ A hexo plugin that optimize the pages loading speed.
 
 It will auto filter your html file, find the `<link rel="stylesheet">` block and replace them into a javascript to [optimize CSS delivery](https://developers.google.com/speed/docs/insights/OptimizeCSSDelivery).
 
-And inline the `main.css` into the html page like @maple3142 [does](https://github.com/maple3142/Blog/blob/master/gulpfile.js).
+And inline the `main.css` into the html page like [@maple3142 does](https://github.com/maple3142/Blog/blob/master/gulpfile.js).
 
 It will improve your pages loading and get a higher score in the [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/).
 
@@ -50,6 +50,9 @@ filter_optimize:
     # bundle loaded js files into one
     bundle: true
     excludes:
+  image:
+    # minify all images
+    minify: false
   # set the priority of this plugin,
   # lower means it will be executed first, default of Hexo is 10
   priority: 12

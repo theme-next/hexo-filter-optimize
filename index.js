@@ -16,15 +16,20 @@ var config = hexo.config.filter_optimize = Object.assign({
     minify  : true,
     bundle  : true,
     excludes: []
+  },
+  image: {
+    minify: true
   }
 }, hexo.config.filter_optimize);
 
 if (process.env.NODE_ENV !== 'development' && config.enable) {
-  const { html, css, js } = require('./lib/filter');
+  const { filter, css, js } = require('./lib/index');
   const priority = parseInt(config.priority, 10) || 10;
 
   // enable one of the optimizations
-  hexo.extend.filter.register('after_generate', html, priority);
+  if (config.css.bundle || config.js.bundle || config.image.minify) {
+    hexo.extend.filter.register('after_generate', filter, priority);
+  }
   if (config.css.minify) {
     hexo.extend.filter.register('after_render:css', css);
   }
