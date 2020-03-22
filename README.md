@@ -33,7 +33,9 @@ filter_optimize:
   # remove the surrounding comments in each of the bundled files
   remove_comments: false
   css:
-    # bundle loaded css file into the one
+    # minify all css files
+    minify: false
+    # bundle loaded css files into one
     bundle: true
     # use a script block to load css elements dynamically
     delivery: true
@@ -43,11 +45,13 @@ filter_optimize:
     inlines:
     excludes:
   js:
-    # bundle loaded js file into the one
+    # minify all js files
+    minify: false
+    # bundle loaded js files into one
     bundle: true
     excludes:
   # set the priority of this plugin,
-  # lower means it will be executed first, default is 10
+  # lower means it will be executed first, default of Hexo is 10
   priority: 12
 ```
 
