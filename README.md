@@ -50,14 +50,6 @@ filter_optimize:
     # bundle loaded js files into one
     bundle: true
     excludes:
-  image:
-    # minify all images
-    minify: true
-    interlaced: false
-    multipass: false
-    optimizationLevel: 2
-    pngquant: false
-    progressive: false
   # set the priority of this plugin,
   # lower means it will be executed first, default of Hexo is 10
   priority: 12
